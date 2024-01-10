@@ -1,0 +1,133 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+/* comman class */
+.btn{
+    background: rgb(22, 79, 224) ;
+    padding: 2vh;
+    border: none;
+    border-radius: 2vmax;
+    font-size: 25px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn:disabled{
+    cursor:not-allowed ;
+}
+/* main class*/
+body{
+    background-color: #000000e2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: all 10ms ease-in-out;
+}
+.notification{
+    padding: 1vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    inset: 0 15vw auto 15vw;
+}
+.mess{
+    width: fit-content;
+    background-color: rgba(0, 255, 204, 0.686);
+    padding: 5px;
+    margin-bottom: 2vh;
+    border-radius: 1vmin;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgb(19, 19, 19);
+
+}
+.container{
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.314);
+    margin:0 ;
+    border-radius: 2vmax;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: auto auto 2vmax auto;
+    box-shadow: 1px 1px 50px rgb(0, 0, 0);
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-1{
+    background-color: red;
+    border-radius: inherit ;
+}
+.colors{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.color_name{
+    background-color: rgba(240, 161, 161, 0.641);
+    padding: 1vmax;
+    list-style: none;
+    border-radius: 2vmax;
+    text-align: center;
+    margin: 0 5px 5px 0;
+}
+.color_copy{
+    color: white;
+    background-color: rgba(41, 39, 39, 0.748);
+    padding: inherit;
+    border-radius: inherit;
+    /* display: inline; */
+    position: absolute;
+    margin: -39px 0 0 -15px;
+    /* inset: 0 0 0 0 ; */
+}
+.color_copy:hover{
+    cursor: pointer;
+}
+.time{
+    max-width: 10vw;
+    
+    border: none;
+    margin: 0  5vmin 0 0;
+    padding: 0.5vmax;
+    text-align: center;
+    display: inline;
+    font-size: 25px;
+}       
+
+.timer{
+    display: flex;
+    flex-direction: row;
+    /* margin-bottom: 3vmax; */
+}
+
+
+
+@media (max-width: 500px) {
+    .container{
+        width: 100%;
+    }
+    .color_name{
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 18px ;
+    }
+    
+}
